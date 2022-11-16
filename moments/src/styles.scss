@@ -1,1 +1,67 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Tahoma;
+  box-sizing: border-box;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  transition: 0.4s;
+}
+
+a:hover {
+  color: #fdd303;
+}
+
+/* FORM */
+form {
+  width: 450px;
+  margin: 0 auto;
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+
+    label {
+      font-weight: bold;
+      font-size: 0.9em;
+      margin-bottom: 0.4em;
+    }
+
+    input,
+    textarea {
+      padding: 0.6em;
+      color: #666;
+      font-size: 0.8em;
+    }
+  }
+
+  input[type="submit"] {
+    background-color: #efefef;
+    border: 2px solid transparent;
+    padding: 0.6em 1em;
+    font-weight: bold;
+    font-size: 1.1rm;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  input[type="submit"]:hover {
+    color: #fdd303;
+    border-color: #fdd303;
+    background-color: transparent;
+  }
+}
+
+.validation-error {
+  p {
+    color: #dc3545;
+    margin-top: 0.4em;
+    border-left: 3px solid #dc3545;
+    padding-left: 0.2em;
+  }
+}
